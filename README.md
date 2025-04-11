@@ -1,2 +1,3 @@
-## Bluetooth_Guest_V2:
+# Códigos exemplo para testar Módulos Bluetooth:
 
+## Antes de iniciar:
