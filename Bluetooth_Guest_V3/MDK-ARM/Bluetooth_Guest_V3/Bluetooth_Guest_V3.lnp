@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"bluetooth_guest_v3\startup_stm32f446xx.o"
+"bluetooth_guest_v3\main.o"
+"bluetooth_guest_v3\stm32f4xx_it.o"
+"bluetooth_guest_v3\stm32f4xx_hal_msp.o"
+"bluetooth_guest_v3\bt_commands.o"
+"bluetooth_guest_v3\stm32f4xx_hal_tim.o"
+"bluetooth_guest_v3\stm32f4xx_hal_tim_ex.o"
+"bluetooth_guest_v3\stm32f4xx_hal_uart.o"
+"bluetooth_guest_v3\stm32f4xx_hal_rcc.o"
+"bluetooth_guest_v3\stm32f4xx_hal_rcc_ex.o"
+"bluetooth_guest_v3\stm32f4xx_hal_flash.o"
+"bluetooth_guest_v3\stm32f4xx_hal_flash_ex.o"
+"bluetooth_guest_v3\stm32f4xx_hal_flash_ramfunc.o"
+"bluetooth_guest_v3\stm32f4xx_hal_gpio.o"
+"bluetooth_guest_v3\stm32f4xx_hal_dma_ex.o"
+"bluetooth_guest_v3\stm32f4xx_hal_dma.o"
+"bluetooth_guest_v3\stm32f4xx_hal_pwr.o"
+"bluetooth_guest_v3\stm32f4xx_hal_pwr_ex.o"
+"bluetooth_guest_v3\stm32f4xx_hal_cortex.o"
+"bluetooth_guest_v3\stm32f4xx_hal.o"
+"bluetooth_guest_v3\stm32f4xx_hal_exti.o"
+"bluetooth_guest_v3\system_stm32f4xx.o"
+--strict --scatter "Bluetooth_Guest_V3\Bluetooth_Guest_V3.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Bluetooth_Guest_V3.map" -o Bluetooth_Guest_V3\Bluetooth_Guest_V3.axf
